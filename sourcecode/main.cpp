@@ -6,15 +6,17 @@
  */
 
 #include <iostream>
-#include "testLivre.cpp"
+#include "tests.h"
 
 using namespace std;
 
 int main(){
 
-	testLivre();
+	testLivre1();
 
 	return 1;
+
 }
+
 
 

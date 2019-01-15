@@ -1,5 +1,3 @@
-main.o: ../main.cpp ../testLivre.cpp ../livre.h
+main.d: ../main.cpp ../tests.h
 
-../testLivre.cpp:
-
-../livre.h:
+../tests.h:
