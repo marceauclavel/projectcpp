@@ -7,12 +7,14 @@
 
 #include <iostream>
 #include "tests.h"
+#include "SousClasses.h"
 
 using namespace std;
 
 int main(){
 
-	testLivre1();
+	testLivre();
+	testBD();
 
 	return 1;
 

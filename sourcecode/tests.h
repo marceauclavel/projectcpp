@@ -9,7 +9,8 @@
 #define TESTS_H_
 
 
-int testLivre1();
+int testLivre();
+int testBD();
 
 
 #endif /* TESTS_H_ */

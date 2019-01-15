@@ -4,16 +4,19 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../SousClasses.cpp \
 ../livre.cpp \
 ../main.cpp \
 ../testLivre.cpp 
 
 OBJS += \
+./SousClasses.o \
 ./livre.o \
 ./main.o \
 ./testLivre.o 
 
 CPP_DEPS += \
+./SousClasses.d \
 ./livre.d \
 ./main.d \
 ./testLivre.d 

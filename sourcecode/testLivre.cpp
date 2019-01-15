@@ -8,12 +8,13 @@
 
 #include "livre.h"
 #include "tests.h"
+#include "SousClasses.h"
 #include <iostream>
 #include <string>
 
 using namespace std;
 
-int testLivre1(){
+int testLivre(){
 
 	Livre livre1 = Livre("Harry", "JK", "Editor1", 1234567890, 145, 271);
 	Livre livre2 = Livre("Potter", "JB", "Editor2", 1199999890, 15, 211, "Ados", "Emprunte");
@@ -30,3 +31,13 @@ int testLivre1(){
 
 	return 1;
 }
+
+int testBD(){
+
+	BD BD1 = BD("Harry", "JK", "Editor1", 1234567890, 145, 271, "dessinateurDeOuf");
+	cout << BD1.getDessinateur() << endl;
+
+	return 1;
+}
+
+
