@@ -28,8 +28,12 @@ protected:
 
 public:
 
-	Livre(int code1, string auteur1, string editeur1, int isbn1, int bibliothequeOrigine1, int bibliothequeActuelle1, string publicVise1 = "tout public", string etat1 = "libre");
+	int static count;
+
+	Livre(string titre1, string auteur1, string editeur1, int isbn1, int bibliothequeOrigine1, int bibliothequeActuelle1, string publicVise1 = "tout public", string etat1 = "libre");
 	virtual ~Livre();
+
+	void affiche();
 
 
 
@@ -59,6 +63,7 @@ public:
 
 	const string& getTitre() const;
 	void setTitre(const string& titre);
+
 
 
 };

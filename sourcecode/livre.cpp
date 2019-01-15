@@ -8,13 +8,19 @@
 
 #include "livre.h"
 #include <string>
+#include <iostream>
+
+using namespace std;
+
+int Livre::count = 0;
 
 
+Livre::Livre(string titre1, string auteur1, string editeur1, int isbn1, int bibliothequeOrigine1, int bibliothequeActuelle1, string publicVise1, string etat1){
 
+	count ++;
 
-Livre::Livre(int code1, string auteur1, string editeur1, int isbn1, int bibliothequeOrigine1, int bibliothequeActuelle1, string publicVise1, string etat1){
-
-	code = code1;
+	titre = titre1;
+	code = count;
 	auteur = auteur1;
 	editeur = editeur1;
 	isbn = isbn1;
@@ -27,6 +33,10 @@ Livre::Livre(int code1, string auteur1, string editeur1, int isbn1, int biblioth
 
 Livre::~Livre(){
 
+}
+
+void Livre::affiche(){
+	cout << "\n " << getTitre() << ", écrit par " << getAuteur() << " aux éditions " << getEditeur() << ".\n Son numéro d'ISBN est: " << getIsbn() << " et c'est un livre pour les " << getPublicVise() << endl;
 }
 
 
@@ -104,4 +114,5 @@ const string& Livre::getAuteur() const {
 	void Livre::setTitre(const string& titre) {
 		this->titre = titre;
 	}
+
 
