@@ -11,6 +11,10 @@
 
 int testLivre();
 int testBD();
+int testRecueilPoesie();
+int testRoman();
+int testPieceDeTheatre();
+int testAlbum();
 
 
 #endif /* TESTS_H_ */

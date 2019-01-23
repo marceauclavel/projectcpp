@@ -34,10 +34,43 @@ int testLivre(){
 
 int testBD(){
 
-	BD BD1 = BD("Harry", "JK", "Editor1", 1234567890, 145, 271, "dessinateurDeOuf");
-	cout << BD1.getDessinateur() << endl;
+	BD BD1 = BD("Tintin", "JK", "Editor1", 1234567890, 145, 271, "dessinateurDeOuf");
+	BD1.affiche();
 
 	return 1;
 }
+
+int testRecueilPoesie(){
+
+	RecueilPoesie recueilPoesie1 = RecueilPoesie("baudelaire", "JK", "Editor1", 1234567890, 145, 271, "prose");
+	recueilPoesie1.affiche();
+
+	return 1;
+}
+
+int testRoman(){
+
+	Roman roman1 = Roman("titreDeRoman", "JK", "Editor1", 1234567890, 145, 271, "New times roman");
+	roman1.affiche();
+
+	return 1;
+}
+
+int testPieceDeTheatre(){
+
+	PieceDeTheatre pieceDeTheatre1 = PieceDeTheatre("titreDePieceDeTheatre", "JK", "Editor1", 1234567890, 145, 271, "New times roman");
+	pieceDeTheatre1.affiche();
+
+	return 1;
+}
+
+int testAlbum(){
+
+	Album album1 = Album("titreD'Album", "JK", "Editor1", 1234567890, 145, 271, "New times roman");
+	album1.affiche();
+
+	return 1;
+}
+
 
 

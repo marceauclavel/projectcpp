@@ -15,6 +15,10 @@ int main(){
 
 	testLivre();
 	testBD();
+	testRecueilPoesie();
+	testRoman();
+	testPieceDeTheatre();
+	testAlbum();
 
 	return 1;
 
